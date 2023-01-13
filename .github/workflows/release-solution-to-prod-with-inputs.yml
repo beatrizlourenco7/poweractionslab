@@ -29,7 +29,7 @@ on:
        type: string
        default: out/release
       QA_ENVIRONMENT_URL:
-        description: 'Build environment url.'
+        description: 'QA environment url.'
         type: string
         required: true
         default: 'https://orgd0a5070f.crm.dynamics.com/'
