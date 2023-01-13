@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_almlab_timeoffrequest" />
+  <EntityRelationship Name="lk_almlab_timeoffrequest_createdby" />
+  <EntityRelationship Name="lk_almlab_timeoffrequest_modifiedby" />
+  <EntityRelationship Name="owner_almlab_timeoffrequest" />
+  <EntityRelationship Name="team_almlab_timeoffrequest" />
+  <EntityRelationship Name="user_almlab_timeoffrequest" />
+</EntityRelationships>
