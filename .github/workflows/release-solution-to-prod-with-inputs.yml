@@ -106,6 +106,7 @@ jobs:
     
     - name: List directory
       run: dir /s ${{ inputs.solution_release_folder}}
+      shell: cmd
     
     #- name: Import solution to prod env
     #  uses: microsoft/powerplatform-actions/import-solution@v0
