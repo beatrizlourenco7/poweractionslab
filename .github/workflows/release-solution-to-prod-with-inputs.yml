@@ -28,7 +28,7 @@ on:
        description: 'folder where the released binaries are going to be hosted *do not change*'
        type: string
        default: out/release
-      BUILD_ENVIRONMENT_URL:
+      QA_ENVIRONMENT_URL:
         description: 'Build environment url.'
         type: string
         required: true
@@ -65,7 +65,7 @@ jobs:
     - name: Import solution as unmanaged to build env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: ${{inputs.BUILD_ENVIRONMENT_URL}}
+        environment-url: ${{inputs.QA_ENVIRONMENT_URL}}
         app-id: ${{ env.CLIENT_ID }}
         client-secret: ${{ secrets.PowerPlatformSPN }}
         tenant-id: ${{ env.TENANT_ID }}
@@ -76,7 +76,7 @@ jobs:
     - name: Export solution as managed
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
-        environment-url: ${{inputs.BUILD_ENVIRONMENT_URL}}
+        environment-url: ${{inputs.QA_ENVIRONMENT_URL}}
         app-id: ${{ env.CLIENT_ID }}
         client-secret: ${{ secrets.PowerPlatformSPN }} 
         tenant-id: ${{ env.TENANT_ID }}
