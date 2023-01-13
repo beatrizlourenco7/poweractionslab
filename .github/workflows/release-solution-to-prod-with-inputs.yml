@@ -105,7 +105,7 @@ jobs:
         path: ${{ inputs.solution_release_folder}}
     
     - name: List directory
-      run: dir /s ${{ inputs.solution_release_folder}}
+      run: dir /s
       shell: cmd
     
     #- name: Import solution to prod env
