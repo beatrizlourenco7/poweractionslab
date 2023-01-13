@@ -1,4 +1,4 @@
-name: release-solution-to-prod-reusable
+name: release-solution-to-prod
 # Reusable workflow
 # convert solution to managed (using a build PowerPlatform environment for the conversion)
 # upload the solution to the GitHub artifacts and deploy to the PROD environment
@@ -103,10 +103,6 @@ jobs:
       with:
         name: managedSolutions
         path: ${{ inputs.solution_release_folder}}
-    
-    - name: List directory
-      run: dir /s
-      shell: cmd
     
     - name: Import solution to prod env
       uses: microsoft/powerplatform-actions/import-solution@v0
