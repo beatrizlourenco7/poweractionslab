@@ -1,4 +1,4 @@
-name: release-solution-to-prod
+name: release-solution-to-qa-and-prod
 # Reusable workflow
 # convert solution to managed (using a build PowerPlatform environment for the conversion)
 # upload the solution to the GitHub artifacts and deploy to the PROD environment
@@ -62,7 +62,7 @@ jobs:
         solution-file: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}.zip
         solution-type: Unmanaged
 
-    - name: Import solution as unmanaged to build env
+    - name: Import solution as managed to QA env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
         environment-url: ${{inputs.QA_ENVIRONMENT_URL}}
