@@ -59,10 +59,8 @@ jobs:
       uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
         solution-folder: ${{ inputs.solution_source_folder}}/${{ inputs.solution_name }}
-        solution-file: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}_managed.zip
-        overwrite-files: true
-        solution-type: Managed
-        
+        solution-file: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}.zip
+        solution-type: Unmanaged
 
     - name: Import solution as unmanaged to build env
       uses: microsoft/powerplatform-actions/import-solution@v0
@@ -71,18 +69,26 @@ jobs:
         app-id: ${{ env.CLIENT_ID }}
         client-secret: ${{ secrets.PowerPlatformSPN }}
         tenant-id: ${{ env.TENANT_ID }}
-        solution-file: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}_managed.zip
+        solution-file: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}.zip
         force-overwrite: true
         publish-changes: true
-        convert-to-managed: true
 
-    
+    - name: Export solution as managed
+      uses: microsoft/powerplatform-actions/export-solution@v0
+      with:
+        environment-url: ${{inputs.QA_ENVIRONMENT_URL}}
+        app-id: ${{ env.CLIENT_ID }}
+        client-secret: ${{ secrets.PowerPlatformSPN }} 
+        tenant-id: ${{ env.TENANT_ID }}
+        solution-name: ${{ inputs.solution_name }}
+        managed: true
+        solution-output-file: ${{ inputs.solution_shipping_folder}}/${{ inputs.solution_name }}.zip
 
     - name: Upload the ready to ship solution to GH artifact store
       uses: actions/upload-artifact@v3
       with:
         name: managedSolutions
-        path: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}_managed.zip
+        path: ${{ inputs.solution_shipping_folder}}/
 
   release-to-prod:
     needs: [ release-to-qa ]
@@ -105,6 +111,6 @@ jobs:
         app-id: ${{ env.CLIENT_ID }}
         client-secret: ${{ secrets.PowerPlatformSPN }}
         tenant-id: ${{ env.TENANT_ID }}
-        solution-file: ${{ inputs.solution_release_folder}}/${{ inputs.solution_name }}_managed.zip
+        solution-file: ${{ inputs.solution_release_folder}}/${{ inputs.solution_name }}.zip
         force-overwrite: true
         publish-changes: true
