@@ -72,6 +72,7 @@ jobs:
         solution-file: ${{ inputs.solution_outbound_folder}}/${{ inputs.solution_name }}.zip
         force-overwrite: true
         publish-changes: true
+        convert-to-managed: true
 
     - name: Export solution as managed
       uses: microsoft/powerplatform-actions/export-solution@v0
