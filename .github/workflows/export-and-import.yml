@@ -46,7 +46,16 @@ jobs:
         app-id: ${{env.CLIENT_ID}}
         client-secret: ${{ secrets.PowerPlatformSPN }}
         tenant-id: ${{env.TENANT_ID}}
-
+    
+    - name: publish solution customizations
+      uses: microsoft/powerplatform-actions/publish-solution@v0
+      with:
+        environment-url: ${{env.ENVIRONMENT_URL}}
+        app-id: ${{env.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{env.TENANT_ID}}
+        solution-name: ${{ github.event.inputs.solution_name }}
+        
     - name: export solution action as unmanaged
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
