@@ -23,6 +23,8 @@ on:
        default: solutions/
 env:
   ENVIRONMENT_URL: 'https://org309e8f7e.crm.dynamics.com/'
+  QA_ENVIRONMENT_URL: 'https://orgd0a5070f.crm.dynamics.com/'
+  PRODUCTION_ENVIRONMENT_URL: 'https://orga2bd4cb8.crm.dynamics.com/'
   CLIENT_ID: 'c7485251-8ef9-4734-be4f-6e7359faef2a'
   TENANT_ID: '2ae11ddb-eeff-4ba6-8871-ebfc9f61160a'
 
@@ -104,7 +106,7 @@ jobs:
     - name: Import solution to prod env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
-        environment-url: ${{inputs.QA_ENVIRONMENT_URL}}
+        environment-url: ${{env.QA_ENVIRONMENT_URL}}
         app-id: ${{ env.CLIENT_ID }}
         client-secret: ${{ secrets.PowerPlatformSPN }}
         tenant-id: ${{ env.TENANT_ID }}
