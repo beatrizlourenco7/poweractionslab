@@ -123,7 +123,14 @@ jobs:
 
         pac solution create-settings --solution-zip ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip --settings-file configurations/${{ github.event.inputs.solution_name }}/DeploymentSettings.json
       shell: pwsh
-
+    
+     # Delete out folder with solution exported in zip format
+    - name: Delete exported solution (zip)
+      run: |
+        Write-Host Removing folder ${{ github.event.inputs.solution_exported_folder}}
+        Remove-Item ${{ github.event.inputs.solution_exported_folder}} -Recurse
+      shell: pwsh
+        
     - name: list files and directories
       run: |
         Get-ChildItem -Recurse
