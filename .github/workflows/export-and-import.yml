@@ -94,6 +94,7 @@ jobs:
   release-to-qa:
     needs: [ export-from-dev ]
     runs-on: windows-latest
+    environment: QA
     env:
       RUNNER_DEBUG: 1
 
@@ -118,6 +119,7 @@ jobs:
   release-to-prod:
     needs: [ release-to-qa ]
     runs-on: windows-latest
+    environment: PROD
     env:
       RUNNER_DEBUG: 1
 
