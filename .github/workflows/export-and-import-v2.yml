@@ -115,6 +115,14 @@ jobs:
         $pacPath = $pacNugetFolder.FullName + "/tools"
         echo "POWERAPPS_CLI_PATH=$pacPath" >> $Env:GITHUB_ENV
       shell: pwsh
+    
+    # Generate deployment settings template file from packed solution using PAC CLI
+    - name: Generate deployment settings file
+      run: |
+        $env:PATH = $env:PATH + ";" + "${{ env.POWERAPPS_CLI_PATH }}"
+
+        pac solution create-settings --solution-zip ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip --settings-file configurations/${{ github.event.inputs.solution_name }}/DeploymentSettings.json
+      shell: pwsh
 
     - name: list files and directories
       run: |
