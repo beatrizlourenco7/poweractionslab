@@ -97,4 +97,5 @@ jobs:
     
     - name: list files and directories
       run: |
-        dir /s
+        Get-ChildItem -Recurse
+      shell: pwsh
