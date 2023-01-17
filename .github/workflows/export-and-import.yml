@@ -125,6 +125,9 @@ jobs:
     - name: Update solution version
       uses: microsoft/powerplatform-actions/update-solution-version@v0
       with:
+        app-id: ${{env.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{env.TENANT_ID}}
         build-version: 1
         revision-version: 2
         patch-version: 3
