@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.22112.196" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.22113.178" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>ALMLab</UniqueName>
     <LocalizedNames>
       <LocalizedName description="ALM Lab" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.0</Version>
-    <Managed>0</Managed>
+    <Version>1.0.0.1</Version>
+    <Managed>2</Managed>
     <Publisher>
-      <UniqueName>almlab</UniqueName>
+      <UniqueName>user9</UniqueName>
       <LocalizedNames>
-        <LocalizedName description="ALMLab" languagecode="1033" />
+        <LocalizedName description="user9" languagecode="1033" />
       </LocalizedNames>
       <Descriptions />
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
-      <CustomizationPrefix>almlab</CustomizationPrefix>
-      <CustomizationOptionValuePrefix>81435</CustomizationOptionValuePrefix>
+      <CustomizationPrefix>user9</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>84688</CustomizationOptionValuePrefix>
       <Addresses>
         <Address>
           <AddressNumber>1</AddressNumber>
@@ -79,14 +79,15 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="almlab_timeoffrequest" behavior="0" />
-      <RootComponent type="300" schemaName="almlab_timeoffcanvasapp_6cfc4" behavior="0" />
-      <RootComponent type="62" schemaName="almlab_TimeOffRequests" behavior="0" />
-      <RootComponent type="80" schemaName="almlab_TimeOffRequests" behavior="0" />
+      <RootComponent type="1" schemaName="user9_timeoffrequest" behavior="0" />
+      <RootComponent type="29" id="{c9618fb2-7996-ed11-aad1-00224830e979}" behavior="0" />
+      <RootComponent type="62" schemaName="user9_TimeOffRequest" behavior="0" />
+      <RootComponent type="80" schemaName="user9_TimeOffRequest" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent type="80" schemaName="almlab_TimeOffRequests" displayName="Time Off Requests" />
+        <Dependent type="80" schemaName="user9_TimeOffRequest" displayName="Time Off Requests" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
