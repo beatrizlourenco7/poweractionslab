@@ -238,7 +238,7 @@ jobs:
       with:
         path: out/release
     
-    - name: Import solution to qa env
+    - name: Import solution to prod env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
         environment-url: ${{env.PRODUCTION_ENVIRONMENT_URL}}
