@@ -8,7 +8,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/18/2023 19:06:48",
+  "HeaderLastSavedDateTimeUTC": "01/18/2023 20:49:27",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -17,10 +17,9 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "Time Off Requests": 3,
-    "Time Off Requests\\almlab_timeoffrequest_statecode": 0,
-    "Time Off Requests\\almlab_timeoffrequest_statuscode": 1,
-    "Time Off Requests\\default.cds_almlab_timeoffrequest_views": 2
+    "ALMLABTABLES": 2,
+    "ALMLABTABLES\\user9_almlabtable_statecode": 1,
+    "ALMLABTABLES\\user9_almlabtable_statuscode": 0
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
@@ -43,8 +42,12 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.025921400000000001,
-    "ControlCount": {},
+    "AnalysisLoadTime": 0.062725000000000003,
+    "ControlCount": {
+      "label": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 1.4493050999999999,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false

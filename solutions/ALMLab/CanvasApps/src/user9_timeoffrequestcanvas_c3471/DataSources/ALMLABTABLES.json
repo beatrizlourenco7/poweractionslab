@@ -1,0 +1,80 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "user9_almlabtables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "user9_almlabtable",
+    "Name": "ALMLABTABLES",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "user9_almlabtable_AsyncOperations": "System Jobs",
+      "user9_almlabtable_BulkDeleteFailures": "Bulk Delete Failures",
+      "user9_almlabtable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "user9_almlabtable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "user9_almlabtable_ProcessSession": "Process Sessions",
+      "user9_almlabtable_SyncErrors": "Sync Errors",
+      "user9_almlabtableid": "ALMLABTABLE",
+      "user9_name": "Name",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ALMLABTABLES",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (ALMLABTABLES)",
+    "Name": "user9_almlabtable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ALMLABTABLES"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ALMLABTABLES",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ALMLABTABLES)",
+    "Name": "user9_almlabtable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ALMLABTABLES"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ALMLABTABLES",
+    "Type": "OptionSetInfo"
+  }
+]
