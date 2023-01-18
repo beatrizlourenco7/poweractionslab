@@ -159,13 +159,14 @@ jobs:
         run: |
           $currentDate = Get-Date -Format "yyyyMMdd"
           $solutionVersion = "${{ env.SOLUTION_VERSION_MAJOR }}.$currentDate.${{ github.run_number }}"
+          echo $solutionVersion
           echo "SOLUTION_VERSION=$solutionVersion" >> $Env:GITHUB_ENV
         shell: pwsh
 
       # Set the solution version in the Solution.xml file
       - name: Set solution version
         run: |
-          $file = 'solutions\${{ needs.pre-job.outputs.solution-name }}\Other\Solution.xml'
+          $file = '${{ github.event.inputs.solution_target_folder}}/${{ github.event.inputs.solution_name }}\Other\Solution.xml'
           $regex = '<Version>[\s\S]*?<\/Version>'
           (Get-Content $file) -replace $regex, '<Version>${{ env.SOLUTION_VERSION }}</Version>' | Set-Content $file
         shell: pwsh
