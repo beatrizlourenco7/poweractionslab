@@ -58,13 +58,7 @@ jobs:
           (Get-Content $file) -replace $regex, '<Version>${{ env.SOLUTION_VERSION }}</Version>' | Set-Content $file
         shell: pwsh
       
-      # Set variable
-      - name: Set variable
-        run: |
-          $file = '${{ github.event.inputs.solution_target_folder}}/${{ github.event.inputs.solution_name }}\Configurations\DeploymentSettings.json'
-          $regex = '<Version>[\s\S]*?<\/Version>'
-          (Get-Content $file) -replace $regex, '<Version>${{ env.SOLUTION_VERSION }}</Version>' | Set-Content $file
-        shell: pwsh
+     
         
       # Pack the considered solution as managed
       - name: Pack solution
@@ -117,12 +111,12 @@ jobs:
             
             if($e.LogicalName -eq "user9_DataverseConnectionReference")
             {
-                $e.ConnectionId = "e19beff3d75c4da2b5904a2046c000c3"
+                $e.ConnectionId = ${{ vars.DATAVERSE_CONNECTION }}
             }
 
             if($e.LogicalName -eq "user9_OutlookConnectionReference")
             {
-                $e.ConnectionId = "cd68b7c598674abca710dc0a4f67df11"
+                $e.ConnectionId = ${{ vars.OUTLOOK_CONNECTION }}
             }
         }
 
@@ -168,12 +162,12 @@ jobs:
             
             if($e.LogicalName -eq "user9_DataverseConnectionReference")
             {
-                $e.ConnectionId = "bef6f40cf9ec452aaccd58d081d461ba"
+                $e.ConnectionId = ${{ vars.DATAVERSE_CONNECTION }}
             }
 
             if($e.LogicalName -eq "user9_OutlookConnectionReference")
             {
-                $e.ConnectionId = "21b15d3ab4c846e2851dbe1ad6747e93"
+                $e.ConnectionId = ${{ vars.OUTLOOK_CONNECTION }}
             }
         }
 
