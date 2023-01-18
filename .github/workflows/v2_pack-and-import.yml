@@ -57,7 +57,15 @@ jobs:
           $regex = '<Version>[\s\S]*?<\/Version>'
           (Get-Content $file) -replace $regex, '<Version>${{ env.SOLUTION_VERSION }}</Version>' | Set-Content $file
         shell: pwsh
-
+      
+      # Set variable
+      - name: Set variable
+        run: |
+          $file = '${{ github.event.inputs.solution_target_folder}}/${{ github.event.inputs.solution_name }}\Configurations\DeploymentSettings.json'
+          $regex = '<Version>[\s\S]*?<\/Version>'
+          (Get-Content $file) -replace $regex, '<Version>${{ env.SOLUTION_VERSION }}</Version>' | Set-Content $file
+        shell: pwsh
+        
       # Pack the considered solution as managed
       - name: Pack solution
         uses: microsoft/powerplatform-actions/pack-solution@main
@@ -98,6 +106,30 @@ jobs:
         Get-ChildItem -Recurse
       shell: pwsh
     
+    - name: Replace
+      run: |
+        Write-Host "Starting replace"
+
+        $snapshot = (Get-Content(out/release/Config/DeploymentSettings.json) | ConvertFrom-Json)
+
+        foreach($e in $snapshot.ConnectionReferences)
+        {
+            if($e.LogicalName -eq "user9_DataverseConnectionReference")
+            {
+                $e.ConnectionId = "e19beff3d75c4da2b5904a2046c000c3"
+            }
+
+            if($e.LogicalName -eq "user9_OutlookConnectionReference")
+            {
+                $e.ConnectionId = "cd68b7c598674abca710dc0a4f67df11"
+            }
+        }
+
+        Set-Content -Path out/release/Config/DeploymentSettings.json -Value (ConvertTo-Json -InputObject $snapshot)
+
+        Write-Host "Finish replace"
+      shell: pwsh
+      
     - name: Import solution to qa env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
@@ -109,7 +141,7 @@ jobs:
         force-overwrite: true
         publish-changes: true
         use-deployment-settings-file: true
-        deployment-settings-file: out/release/Config/DeploymentSettings_QA.json
+        deployment-settings-file: out/release/Config/DeploymentSettings.json
     
     #   - Turn on cloud flows
     #- name: Steps post solution import
@@ -156,4 +188,4 @@ jobs:
         force-overwrite: true
         publish-changes: true
         use-deployment-settings-file: true
-        deployment-settings-file: out/release/Config/DeploymentSettings_PROD.json
+        deployment-settings-file: out/release/Config/DeploymentSettings.json
