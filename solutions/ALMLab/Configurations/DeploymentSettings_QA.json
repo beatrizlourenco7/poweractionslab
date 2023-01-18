@@ -4,7 +4,7 @@
     {
       "LogicalName": "demo_sharedcommondataserviceforapps_812d7",
       "ConnectionId": "e19beff3d75c4da2b5904a2046c000c3",
-      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataservice"
     },
     {
       "LogicalName": "demo_sharedoffice365_320d5",
