@@ -178,6 +178,31 @@ jobs:
       with:
         path: out/release
     
+    - name: Replace
+      run: |
+        Write-Host "Starting replace"
+        $snapshot = (Get-Content -Path out/release/Config/DeploymentSettings.json | ConvertFrom-Json)
+
+        foreach($e in $snapshot.ConnectionReferences)
+        {
+            Write-Host $e.LogicalName
+            
+            if($e.LogicalName -eq "user9_DataverseConnectionReference")
+            {
+                $e.ConnectionId = "bef6f40cf9ec452aaccd58d081d461ba"
+            }
+
+            if($e.LogicalName -eq "user9_OutlookConnectionReference")
+            {
+                $e.ConnectionId = "21b15d3ab4c846e2851dbe1ad6747e93"
+            }
+        }
+
+        Set-Content -Path out/release/Config/DeploymentSettings.json -Value (ConvertTo-Json -InputObject $snapshot)
+
+        Write-Host "Finish replace"
+      shell: pwsh
+      
     - name: Import solution to prod env
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
