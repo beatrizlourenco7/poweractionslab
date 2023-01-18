@@ -81,6 +81,7 @@
       <RootComponent type="1" schemaName="almlab_timeoffrequest" behavior="0" />
       <RootComponent type="1" schemaName="user9_timeoffrequest" behavior="0" />
       <RootComponent type="29" id="{c9618fb2-7996-ed11-aad1-00224830e979}" behavior="0" />
+      <RootComponent type="300" schemaName="user9_timeoffrequestcanvas_c3471" behavior="0" />
       <RootComponent type="62" schemaName="user9_TimeOffRequest" behavior="0" />
       <RootComponent type="80" schemaName="user9_TimeOffRequest" behavior="0" />
     </RootComponents>
