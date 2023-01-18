@@ -1,4 +1,4 @@
-name: v2_export-and-import
+name: v2_pack-and-import
 
 on:
   workflow_dispatch:
