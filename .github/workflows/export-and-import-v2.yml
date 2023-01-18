@@ -222,8 +222,8 @@ jobs:
         solution-file: out/release/managedSolutions/${{ inputs.solution_name }}_managed.zip
         force-overwrite: true
         publish-changes: true
-        #use-deployment-settings-file: true
-        #deployment-settings-file: out/release/Configurations/${{ needs.pre-job.outputs.solution-name }}/DeploymentSettings.json
+        use-deployment-settings-file: true
+        deployment-settings-file: out/release/Config/DeploymentSettings_QA.json
     
   release-to-prod:
     needs: [ release-to-qa ]
@@ -248,5 +248,5 @@ jobs:
         solution-file: out/release/managedSolutions/${{ inputs.solution_name }}_managed.zip
         force-overwrite: true
         publish-changes: true
-        #use-deployment-settings-file: true
-        #deployment-settings-file: out/release/Configurations/${{ needs.pre-job.outputs.solution-name }}/DeploymentSettings.json
+        use-deployment-settings-file: true
+        deployment-settings-file: out/release/Config/DeploymentSettings_PROD.json
