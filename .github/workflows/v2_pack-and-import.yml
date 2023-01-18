@@ -111,12 +111,12 @@ jobs:
             
             if($e.LogicalName -eq "user9_DataverseConnectionReference")
             {
-                $e.ConnectionId = ${{ vars.DATAVERSE_CONNECTION }}
+                $e.ConnectionId = '${{ vars.DATAVERSE_CONNECTION }}'
             }
 
             if($e.LogicalName -eq "user9_OutlookConnectionReference")
             {
-                $e.ConnectionId = ${{ vars.OUTLOOK_CONNECTION }}
+                $e.ConnectionId = '${{ vars.OUTLOOK_CONNECTION }}'
             }
         }
 
@@ -162,12 +162,12 @@ jobs:
             
             if($e.LogicalName -eq "user9_DataverseConnectionReference")
             {
-                $e.ConnectionId = ${{ vars.DATAVERSE_CONNECTION }}
+                $e.ConnectionId = '${{ vars.DATAVERSE_CONNECTION }}'
             }
 
             if($e.LogicalName -eq "user9_OutlookConnectionReference")
             {
-                $e.ConnectionId = ${{ vars.OUTLOOK_CONNECTION }}
+                $e.ConnectionId = '${{ vars.OUTLOOK_CONNECTION }}'
             }
         }
 
