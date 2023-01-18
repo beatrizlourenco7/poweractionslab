@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "user9_almlabtable",
+    "MaxGetRowsCount": 500,
     "Name": "ALMLABTABLES",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -36,6 +37,20 @@
     },
     "PreferredName": "ALMLABTABLES",
     "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "ALMLABTABLES (Views)",
+    "Name": "_user9_almlabtable_views",
+    "RelatedEntityName": "ALMLABTABLES",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "02e3f9aa-bb26-4d8e-bf94-b6cc023361f8": "Active ALMLABTABLES",
+      "0d39bc74-e516-4e5d-8870-c020274245b6": "ALMLABTABLE Associated View",
+      "20f1e4bb-5025-4f77-ab34-b1170b366d85": "Inactive ALMLABTABLES",
+      "2cd3cccc-6c4d-4a5c-8dce-642f787a8fe8": "ALMLABTABLE Lookup View",
+      "ecb1709e-1fd5-4e9a-9768-c49d01a1e695": "ALMLABTABLE Advanced Find View"
+    }
   },
   {
     "DisplayName": "Status (ALMLABTABLES)",

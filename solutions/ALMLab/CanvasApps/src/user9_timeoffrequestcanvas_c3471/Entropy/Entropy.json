@@ -3,12 +3,22 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Button1": 14,
+    "Created On_DataCard1": 11,
+    "DataCardKey1": 7,
+    "DataCardKey2": 12,
+    "DataCardValue1": 8,
+    "DataCardValue2": 13,
+    "ErrorMessage1": 9,
+    "Form1": 5,
     "Label1": 4,
-    "Screen1": 3
+    "Name_DataCard1": 6,
+    "Screen1": 3,
+    "StarVisible1": 10
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/18/2023 20:49:27",
+  "HeaderLastSavedDateTimeUTC": "01/18/2023 21:15:28",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -17,37 +27,61 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "ALMLABTABLES": 2,
-    "ALMLABTABLES\\user9_almlabtable_statecode": 1,
-    "ALMLABTABLES\\user9_almlabtable_statuscode": 0
+    "ALMLABTABLES": 3,
+    "ALMLABTABLES\\default.cds_user9_almlabtable_views": 2,
+    "ALMLABTABLES\\user9_almlabtable_statecode": 0,
+    "ALMLABTABLES\\user9_almlabtable_statuscode": 1
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "label": 0
+    "button": 3,
+    "form": 1,
+    "label": 0,
+    "text": 2
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Button1": {},
+    "Created On_DataCard1": {},
+    "DataCardKey1": {},
+    "DataCardKey2": {},
+    "DataCardValue1": {},
+    "DataCardValue2": {},
+    "ErrorMessage1": {},
+    "Form1": {},
     "Label1": {},
-    "Screen1": {}
+    "Name_DataCard1": {},
+    "Screen1": {},
+    "StarVisible1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "Button1": 10,
+    "Created On_DataCard1": 7,
+    "DataCardKey1": 4,
+    "DataCardKey2": 8,
+    "DataCardValue1": 5,
+    "DataCardValue2": 9,
+    "ErrorMessage1": 6,
+    "Form1": 1,
     "Label1": 0,
-    "Screen1": 0
+    "Name_DataCard1": 2,
+    "Screen1": 0,
+    "StarVisible1": 3
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.062725000000000003,
+    "AnalysisLoadTime": 0.073465799999999998,
     "ControlCount": {
       "label": 1,
       "screen": 1
     },
-    "DeserializationLoadTime": 1.4493050999999999,
+    "DeserializationLoadTime": 0.99140030000000001,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false
