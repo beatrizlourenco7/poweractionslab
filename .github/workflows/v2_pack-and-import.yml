@@ -143,28 +143,7 @@ jobs:
         publish-changes: true
         use-deployment-settings-file: true
         deployment-settings-file: out/release/Config/DeploymentSettings.json
-    
-    #   - Turn on cloud flows
-    #- name: Steps post solution import
-    #  run: |
-    #    echo "========== Install Microsoft.PowerApps.Administration.PowerShel module =========="
-    #    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Scope CurrentUser -Force
-    #    echo "========== Install Microsoft.Xrm.Data.PowerShell module =========="
-    #    Install-Module Microsoft.Xrm.Data.PowerShell -Scope CurrentUser -Force
-    #    echo "==========  Set params =========="
-    #    $Params = @{
-    #      ClientId = "${{ env.CLIENT_ID }}"
-    #      ClientSecret = "${{ secrets.PowerPlatformSPN }}"
-    #      DataverseEnvironmentUrl = "${{ secrets.QA_ENVIRONMENT_URL }}"
-    #      SolutionName = "${{ inputs.solution_name }}"
-    #      SolutionComponentsOwnerEmail = "action@github.com"
-    #      MaximumTries = "3"
-    #    }
-    #    echo "==========  Enable-CloudFlows =========="
-    #    Import-Module ./scripts/Enable-CloudFlows.ps1 -Force
-    #    Enable-CloudFlows @Params -verbose
-    #  shell: powershell
-        
+            
   release-to-prod:
     needs: [ release-to-qa ]
     runs-on: windows-latest
