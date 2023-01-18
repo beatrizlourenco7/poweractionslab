@@ -47,7 +47,7 @@
             },
             "parameters": {
               "subscriptionRequest/message": 1,
-              "subscriptionRequest/entityname": "almlab_timeoffrequest",
+              "subscriptionRequest/entityname": "user9_almlabtable",
               "subscriptionRequest/scope": 2
             },
             "authentication": "@parameters('$authentication')"
