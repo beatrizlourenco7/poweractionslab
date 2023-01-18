@@ -14,15 +14,15 @@
   <AppModules />
   <EntityDataProviders />
   <connectionreferences>
-    <connectionreference connectionreferencelogicalname="demo_sharedcommondataserviceforapps_812d7">
-      <connectionreferencedisplayname>Microsoft Dataverse DemoTranspetro-812d7</connectionreferencedisplayname>
+    <connectionreference connectionreferencelogicalname="user9_DataverseConnectionReference">
+      <connectionreferencedisplayname>Dataverse Connection Reference</connectionreferencedisplayname>
       <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
       <iscustomizable>1</iscustomizable>
       <statecode>0</statecode>
       <statuscode>1</statuscode>
     </connectionreference>
-    <connectionreference connectionreferencelogicalname="demo_sharedoffice365_320d5">
-      <connectionreferencedisplayname>Office 365 Outlook DemoTranspetro-320d5</connectionreferencedisplayname>
+    <connectionreference connectionreferencelogicalname="user9_OutlookConnectionReference">
+      <connectionreferencedisplayname>Outlook Connection Reference</connectionreferencedisplayname>
       <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
       <iscustomizable>1</iscustomizable>
       <statecode>0</statecode>

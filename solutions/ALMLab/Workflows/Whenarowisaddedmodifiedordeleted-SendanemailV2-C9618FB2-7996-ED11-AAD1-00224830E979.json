@@ -1,22 +1,22 @@
 {
   "properties": {
     "connectionReferences": {
-      "shared_commondataserviceforapps": {
+      "shared_office365_1": {
         "runtimeSource": "embedded",
         "connection": {
-          "connectionReferenceLogicalName": "demo_sharedcommondataserviceforapps_812d7"
-        },
-        "api": {
-          "name": "shared_commondataserviceforapps"
-        }
-      },
-      "shared_office365": {
-        "runtimeSource": "embedded",
-        "connection": {
-          "connectionReferenceLogicalName": "demo_sharedoffice365_320d5"
+          "connectionReferenceLogicalName": "user9_OutlookConnectionReference"
         },
         "api": {
           "name": "shared_office365"
+        }
+      },
+      "shared_commondataserviceforapps_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "user9_DataverseConnectionReference"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
         }
       }
     },
@@ -41,7 +41,7 @@
           "type": "OpenApiConnectionWebhook",
           "inputs": {
             "host": {
-              "connectionName": "shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps_1",
               "operationId": "SubscribeWebhookTrigger",
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
             },
@@ -63,7 +63,7 @@
           "type": "OpenApiConnection",
           "inputs": {
             "host": {
-              "connectionName": "shared_office365",
+              "connectionName": "shared_office365_1",
               "operationId": "SendEmailV2",
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
             },
@@ -79,7 +79,7 @@
       },
       "outputs": {}
     },
-    "templateName": null
+    "templateName": ""
   },
   "schemaVersion": "1.0.0.0"
 }
