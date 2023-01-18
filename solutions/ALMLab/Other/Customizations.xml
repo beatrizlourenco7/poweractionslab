@@ -13,6 +13,7 @@
   <AppModuleSiteMaps />
   <AppModules />
   <EntityDataProviders />
+  <CanvasApps />
   <connectionreferences>
     <connectionreference connectionreferencelogicalname="user9_DataverseConnectionReference">
       <connectionreferencedisplayname>Dataverse Connection Reference</connectionreferencedisplayname>

@@ -1,0 +1,96 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "almlab_timeoffrequests",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "almlab_timeoffrequest",
+    "Name": "Time Off Requests",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "almlab_name": "Name",
+      "almlab_timeoffrequest_AsyncOperations": "System Jobs",
+      "almlab_timeoffrequest_BulkDeleteFailures": "Bulk Delete Failures",
+      "almlab_timeoffrequest_DuplicateBaseRecord": "Duplicate Records (almlab_timeoffrequest_DuplicateBaseRecord)",
+      "almlab_timeoffrequest_DuplicateMatchingRecord": "Duplicate Records (almlab_timeoffrequest_DuplicateMatchingRecord)",
+      "almlab_timeoffrequest_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "almlab_timeoffrequest_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "almlab_timeoffrequest_ProcessSession": "Process Sessions",
+      "almlab_timeoffrequest_SyncErrors": "Sync Errors",
+      "almlab_timeoffrequestid": "Time Off Request",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Time Off Requests",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Time Off Requests (Views)",
+    "Name": "_almlab_timeoffrequest_views",
+    "RelatedEntityName": "Time Off Requests",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4dcec674-c033-4bb6-804d-e9994e92b05b": "Time Off Request Lookup View",
+      "5bef81a8-d57d-4b63-98ce-7557a0ab43dd": "Active Time Off Requests",
+      "6a165ac8-1e0b-481a-9337-4275fe2dd219": "Time Off Request Associated View",
+      "8b03f492-35e4-4b53-ba0e-d45c06cb60c1": "Time Off Request Advanced Find View",
+      "e86daf0f-4421-4fd4-95ca-c82bea870ff9": "Inactive Time Off Requests"
+    }
+  },
+  {
+    "DisplayName": "Status (Time Off Requests)",
+    "Name": "almlab_timeoffrequest_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Time Off Requests"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Time Off Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Time Off Requests)",
+    "Name": "almlab_timeoffrequest_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Time Off Requests"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Time Off Requests",
+    "Type": "OptionSetInfo"
+  }
+]
