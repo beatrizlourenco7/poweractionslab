@@ -27,6 +27,7 @@ env:
   PRODUCTION_ENVIRONMENT_URL: 'https://orga2bd4cb8.crm.dynamics.com/'
   CLIENT_ID: 'c7485251-8ef9-4734-be4f-6e7359faef2a'
   TENANT_ID: '2ae11ddb-eeff-4ba6-8871-ebfc9f61160a'
+  SOLUTION_VERSION_MAJOR: '1'
 
 jobs:
   export-from-dev:
