@@ -113,6 +113,8 @@ jobs:
 
         foreach($e in $snapshot.ConnectionReferences)
         {
+            Write-Host $e.LogicalName
+            
             if($e.LogicalName -eq "user9_DataverseConnectionReference")
             {
                 $e.ConnectionId = "e19beff3d75c4da2b5904a2046c000c3"
