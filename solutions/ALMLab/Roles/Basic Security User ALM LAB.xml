@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{65ca9f95-7597-ed11-aad1-00224830e979}" name="Basic Security User ALM LAB" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendTouser9_ALMLABTABLE" level="Global" />
+    <RolePrivilege name="prvAppenduser9_ALMLABTABLE" level="Global" />
+    <RolePrivilege name="prvAssignuser9_ALMLABTABLE" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvCreateuser9_ALMLABTABLE" level="Global" />
+    <RolePrivilege name="prvDeleteuser9_ALMLABTABLE" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReaduser9_ALMLABTABLE" level="Global" />
+    <RolePrivilege name="prvShareuser9_ALMLABTABLE" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+    <RolePrivilege name="prvWriteuser9_ALMLABTABLE" level="Global" />
+  </RolePrivileges>
+</Role>

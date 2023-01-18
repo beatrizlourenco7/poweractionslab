@@ -79,6 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="user9_almlabtable" behavior="0" />
+      <RootComponent type="20" id="{65ca9f95-7597-ed11-aad1-00224830e979}" behavior="0" />
       <RootComponent type="29" id="{c9618fb2-7996-ed11-aad1-00224830e979}" behavior="0" />
       <RootComponent type="300" schemaName="user9_timeoffrequestcanvas_c3471" behavior="0" />
     </RootComponents>
