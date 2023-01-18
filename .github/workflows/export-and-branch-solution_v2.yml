@@ -1,4 +1,4 @@
-name: export-and-import-v2
+name: export-and-branch-solution_v2
 
 on:
   workflow_dispatch:
