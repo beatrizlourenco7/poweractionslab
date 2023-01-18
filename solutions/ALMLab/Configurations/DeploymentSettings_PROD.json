@@ -1,0 +1,15 @@
+{
+  "EnvironmentVariables": [],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "user9_DataverseConnectionReference",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    },
+    {
+      "LogicalName": "user9_OutlookConnectionReference",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+    }
+  ]
+}
