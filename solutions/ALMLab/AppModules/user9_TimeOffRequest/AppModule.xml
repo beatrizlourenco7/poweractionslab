@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AppModule>
-  <UniqueName>almlab_TimeOffRequests</UniqueName>
+  <UniqueName>user9_TimeOffRequest</UniqueName>
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
   <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
   <OptimizedFor></OptimizedFor>
@@ -10,8 +10,8 @@
   <ClientType>4</ClientType>
   <NavigationType>0</NavigationType>
   <AppModuleComponents>
-    <AppModuleComponent type="1" schemaName="almlab_timeoffrequest" />
-    <AppModuleComponent type="62" schemaName="almlab_TimeOffRequests" />
+    <AppModuleComponent type="1" schemaName="user9_timeoffrequest" />
+    <AppModuleComponent type="62" schemaName="user9_TimeOffRequest" />
   </AppModuleComponents>
   <AppModuleRoleMaps>
     <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
