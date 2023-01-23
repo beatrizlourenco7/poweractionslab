@@ -5,20 +5,21 @@
     "App": 1,
     "Button1": 14,
     "Created On_DataCard1": 11,
-    "DataCardKey1": 7,
+    "DataCardKey1": 8,
     "DataCardKey2": 12,
-    "DataCardValue1": 8,
+    "DataCardValue1": 9,
     "DataCardValue2": 13,
-    "ErrorMessage1": 9,
+    "ErrorMessage1": 10,
     "Form1": 5,
     "Label1": 4,
+    "Label2": 15,
     "Name_DataCard1": 6,
     "Screen1": 3,
-    "StarVisible1": 10
+    "StarVisible1": 7
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/18/2023 21:15:28",
+  "HeaderLastSavedDateTimeUTC": "01/23/2023 19:09:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -52,6 +53,7 @@
     "ErrorMessage1": {},
     "Form1": {},
     "Label1": {},
+    "Label2": {},
     "Name_DataCard1": {},
     "Screen1": {},
     "StarVisible1": {}
@@ -68,6 +70,7 @@
     "ErrorMessage1": 6,
     "Form1": 1,
     "Label1": 0,
+    "Label2": 11,
     "Name_DataCard1": 2,
     "Screen1": 0,
     "StarVisible1": 3
@@ -76,12 +79,16 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.073465799999999998,
+    "AnalysisLoadTime": 0.1685702,
     "ControlCount": {
-      "label": 1,
-      "screen": 1
+      "button": 1,
+      "form": 1,
+      "label": 6,
+      "screen": 1,
+      "text": 1,
+      "typedDataCard": 2
     },
-    "DeserializationLoadTime": 0.99140030000000001,
+    "DeserializationLoadTime": 0.92026050000000004,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false

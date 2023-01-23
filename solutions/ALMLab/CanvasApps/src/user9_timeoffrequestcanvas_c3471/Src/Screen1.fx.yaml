@@ -128,3 +128,13 @@ Screen1 As screen:
         Y: =304
         ZIndex: =3
 
+    Label2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =60
+        Text: ="Novo teste de DEPLOYMENT"
+        Width: =303
+        X: =800
+        Y: =386
+        ZIndex: =4
+
